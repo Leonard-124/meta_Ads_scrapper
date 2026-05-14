@@ -1,5 +1,5 @@
 
-This is minimal production-ready Meta Ads Library scraper (~100 lines).
+This is minimal production-ready Meta Ads Library scraper.
 
 Features:
 - Search by keyword, Facebook page URL, or page slug
