@@ -18,4 +18,3 @@ Get the access token from here:  https://www.facebook.com/ads/library/api/     c
 
 on your terminal run python web_scrapper.py
 
-to clone this repo run git clone
