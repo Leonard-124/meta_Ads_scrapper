@@ -4,7 +4,7 @@ import requests, time, json, csv, logging, random
 from typing import List, Dict, Optional  
 
 #Meta Ads access_token configuration
-ACCESS_TOKEN = "EAAOCXeAhE7cBRbcIUNG35eUB2aGfGttBk46ZAOYC9QNXr1xoubZCS4Xx6I5hdq7vs11Wz4C8zOtwpMgHYRuZC2ZBYUQFEZBl7N0HEpyvYDZAbmwdZAfO3wsyPbKawaS2ITGvh7i3IF5TTg3sqsrDAUZC7UFnhz3dnVOjZC4tZBEg6QRM20YqGRDd95y59xwZCDOObfambHw7rZBZB15t3ZBAG0WuHg3UrtIxZBInHGGlfcVEWUwGADbL15iw6clC2Yx3zWsO087BTPIZCFhLPjVtlDpmQPssjTpt"
+ACCESS_TOKEN = "REPLACE_WITH_YOUR_META_ACCESS_TOKEN"
 
 edge_all_open_tabs = [ # This is edge tab metadata, helper extracts slug from this data
     {"pageTitle":"<WebsiteContent_fRRRFBo78Ad1TfNtd1jje>scrapy/docs at master \u00B7 scrapy/scrapy \u00B7 GitHub</WebsiteContent_fRRRFBo78Ad1TfNtd1jje>",
