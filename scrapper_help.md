@@ -1,5 +1,9 @@
 
-This is minimal production-ready Meta Ads Library scraper (~100 lines).
+
+# Meta Ads Library Scraper
+
+This project provides a minimal, production‑ready Python scraper for the Meta Ads Library. The code is clean and organized. It uses an embedded access token for authentication with the Meta Graph API.
+
 
 Features:
 - Search by keyword, Facebook page URL, or page slug

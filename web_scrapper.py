@@ -6,7 +6,7 @@ from typing import List, Dict, Optional
 #Meta Ads access_token configuration
 ACCESS_TOKEN = "REPLACE_WITH_YOUR_META_ACCESS_TOKEN"
 
-edge_all_open_tabs = [ # This is edge tab metadata, helper extracts slug from this data
+edge_all_open_tabs = [ # This is edge tab metadata, helper extracts slug from this site data
     {"pageTitle":"<WebsiteContent_fRRRFBo78Ad1TfNtd1jje>scrapy/docs at master \u00B7 scrapy/scrapy \u00B7 GitHub</WebsiteContent_fRRRFBo78Ad1TfNtd1jje>",
      "pageUrl":"<WebsiteContent_fRRRFBo78Ad1TfNtd1jje>https://github.com/scrapy/scrapy/tree/master/docs</WebsiteContent_fRRRFBo78Ad1TfNtd1jje>",
      "tabId":1282741773,"isCurrent":True} 
@@ -115,7 +115,7 @@ class MetaAdsScraper: # Main scraper encapsultes all scraping behavior so the lo
         logging.info("Finished. Total ads fetched: %d", len(ads))
         return ads
 
-    @staticmethod  #converts function to be static method
+    @staticmethod  #
     def export_json(ads: List[Dict], path: str): #write ads list to a JSON file with pretty formating
         with open(path, "w", encoding="utf-8") as f:
             json.dump(ads, f, ensure_ascii=False, indent=2)
@@ -137,7 +137,7 @@ class MetaAdsScraper: # Main scraper encapsultes all scraping behavior so the lo
 
 
 
-def extract_slug_from_edge(tabs: List[Dict]) -> Optional[str]: #helper
+def extract_slug_from_edge(tabs: List[Dict]) -> Optional[str]: #helper functio
     for t in tabs:
         if t.get("isCurrent"):
             url = t.get("pageUrl", "")
